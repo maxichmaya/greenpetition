@@ -1,0 +1,29 @@
+
+<h2>Join Green petition</h2>
+<h1 class="petitionIntro">Let´s make planting a TREE an obligatory step after
+making first Anmeldung in Berlin!</h1>
+
+<h1></h1>
+
+
+<form method="POST">
+    <div class="fillInMessage {{#if fillInMessage}}on
+        {{/if}}"><p>Ups...something went wrong!</p></div>
+
+    <input name="name" placeholder="name" type="text">
+    <br>
+    <input name="surname" placeholder="surname" type="text">
+    <br>
+    <input name="email" type="text" placeholder="e-mail">
+    <br>
+    <input id="password" type="password" name="password" placeholder="password">
+    <br>
+    <input name="_csrf" type="hidden" value="{{csrfToken}}">
+
+
+    <br>
+    <button class="btn" type="submit" name="button">submit</button>
+    <br>
+    <h5>Have an account? <a href="/login"> Login </a></h5>
+
+</form>

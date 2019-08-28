@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family: "Acme", sans-serif;
+}
+
+body {
+    background-image: url("3.jpg");
+    background-size: auto;
+    text-align: center;
+    color: darkgreen;
+}
+
+.petitionIntro {
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+
+.fillInMessage {
+    visibility: hidden;
+}
+
+.fillInMessage.on {
+    visibility: visible;
+    color: rgb(178, 51, 121);
+    font-weight: bold;
+}
+
+a {
+    color: rgb(178, 51, 121);
+}
+
+.btn {
+    /* display: inline-block; */
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(216, 62, 147);
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn:hover {
+    background-color: rgb(178, 51, 121);
+    border-radius: 40px;
+    transition: 0.2s linear;
+}
+
+.btn2 {
+    font-size: 10px;
+}
+
+.btn2:hover {
+    font-size: 15px;
+    background-color: rgb(246, 184, 173);
+    opacity: 0.7;
+}
+
+input {
+    border: 2px dotted darkgreen;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 45px;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+#canvas {
+    border: dotted darkgreen 3px;
+    color: red;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+li {
+    margin-top: 30px;
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+footer {
+    margin-left: 10px;
+    text-align: left;
+    opacity: 0.4;
+}

@@ -1,0 +1,24 @@
+    <h2>Edit your profile</h2>
+<!-- <div class="edit"> -->
+
+<form method="post">
+<input type="hidden" name="_csrf" value="{{csrfToken}}">
+{{#userInfo}}
+<input type="text" name="name" value="{{name}}" placeholder="name"><br>
+<input type="text" name="surname" value="{{surname}}" placeholder="surname"><br>
+<input type="text" name="email" value="{{email}}" placeholder="e-mail"><br>
+<input type="password" name="password" id="password" placeholder="password"><br>
+<input type="number" name="age" value="{{age}}" placeholder="how old are you?"><br>
+<input type="text" name="city" value="{{city}}" placeholder="your city"><br>
+<input type="text" name="url" value="{{url}}" placeholder="url"><br>
+
+<button class="btn" type="submit" name="button">submit change</button><br><br>
+{{/userInfo}}
+</form>
+<a class="btn" href="/signerslist">continue without a change</a><br><br>
+<a class="btn2" href="/login">get me out of here</a>
+
+
+
+
+<!-- </div> -->

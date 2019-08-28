@@ -1,0 +1,27 @@
+-- -- id
+-- -- first
+-- -- last
+-- -- email- put unique contrsint on the emial
+-- -- password (which should firt be hacked)
+-- -- created_at ....
+
+-- --
+-- -- STEPS ZA 3.
+-- --
+-- -- registration - new template with <form> and 4 input fields
+-- -- serve-side --hash the password and insert first,last,email and hashed password into the newusers TABLE
+-- --
+-- -- certain user's can
+-- --
+-- -- put userID in cookie and the value of the userId cookie should be the ID generated
+-- -- by postgres when we did the insert
+-- --
+-- -- LOGIN
+-- --
+-- -- new templete with form and 2 input input
+-- fieldsserver-side we need to get the user's hashed password fromdatabase and then compare
+-- -- that hash with the password from database and then compare that hash withthe passwordwe gotfrom the input firld
+
+-- -- LOGOUTWE NEED TO DELETA EVERYTHING IN THE USER'S cookie
+-- -- reg.session = NULL
+-- -- logout can happened on get oR post request

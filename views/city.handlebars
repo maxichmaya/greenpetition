@@ -1,0 +1,14 @@
+<h2>This are our supporters from {{city}}</h2>
+<div class="city">
+<ul>
+    {{#signers}}
+    <li>{{name}} {{surname}} | {{age}} </li>
+    {{/signers}}
+
+</ul>
+</div>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+<br><br>
+    <a class="btn" href="/edit">edit your profile</a>
+<br><br><br><br>
+    <a class="btn2" href="/login">get me out of here</a>

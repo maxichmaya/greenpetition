@@ -1,0 +1,26 @@
+
+    <h2>Signers for the GREEN PETITION!!</h2>
+
+<div class="signerslist">
+    {{#signers}}
+    {{#if url}}
+        <a href='{{url}}'> {{name}} {{surname}} </a>
+        {{else}} {{name}} {{surname}}
+    {{/if}}
+    |{{age}} |
+     {{#if city}}
+        <a href = '/signerslist/{{city}}'> {{city}} </a>
+    {{else}}
+    <h3>{{name}} {{surname}}| {{age}} | <a href = '/signerslist/{{city}}'>{{city}}</a></h3>
+    {{/if}}
+    </p>
+    {{/signers}}
+
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+</div>
+
+    <a class="btn" href="/edit">edit your profile</a>
+    <br><br><br><br><br>
+
+    <a class="btn2" href="/login">get me out of here</a>
